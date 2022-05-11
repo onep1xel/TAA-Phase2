@@ -1,0 +1,33 @@
+
+CSS from original video media querie
+
+
+.mobile-video {
+display: none;
+}
+
+@media screen and (max-width: 420px) {
+	.desktop-video {
+display: none;
+}
+
+@media screen and (max-width: 992px) {
+
+.desktop-video {
+transform: scale(1.8);
+}
+
+}
+
+.mobile-video {
+display: block;
+}
+}
+
+
+
+
+
+@media screen and (max-width: 960px) { .desktop-video { transform: scale(1.8); } }
+
+@media screen and (max-width: 768px) { .desktop-video { display: none; } .mobile-video {display: block} }
