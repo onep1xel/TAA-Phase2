@@ -945,12 +945,12 @@ body,
 
 /* Initial Logo Width */
 .header .logo{
-	width: 17rem;
+	width: 24rem;
 }
 
 /* Compacted Header Logo Width */
 .header-compact .logo{
-	width: 17rem;
+	width: 24rem;
 }
 
 /* Initial Logo Styling */
@@ -4133,7 +4133,7 @@ blockquote cite{
 }
 .progress-bar,
 .progress-bar.medium{
-	height: 0.8rem;
+	height: 7.8rem;
 }
 .progress-bar.large{
 	height: 1.3rem;
