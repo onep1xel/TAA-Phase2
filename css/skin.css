@@ -4125,6 +4125,7 @@ blockquote cite{
 	border: none;
 }
 .progress-bar .bar{
+		height: 0.4rem;
 	padding: 0 0.5rem;
 	font-weight: 400;
 }
