@@ -250,7 +250,7 @@ blockquote{
 }
 .text-small{
 	font-size: 2.0rem;
-	line-height: 1.1;
+	line-height: 1.3;
 }
 
 .text-xsmall{
@@ -4125,7 +4125,7 @@ blockquote cite{
 	border: none;
 }
 .progress-bar .bar{
-		height: 0.4rem;
+	height: 7.8rem;
 	padding: 0 0.5rem;
 	font-weight: 400;
 }
