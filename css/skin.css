@@ -36,22 +36,19 @@ Copyright: ThemeMountain
 28. Component Styling
 29. Resolution Media Queries
 
-
 -------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
 [1. Typography]
 */
 
-
-
 body{
+	letter-spacing: 0;
+	font-weight: 400;
 	font-size: 3.5rem;
 	line-height: 1.2;
-	font-family: 'degular', 'helvetica', 'arial', sans-serif;
+	color: #969aa1;
 }
-
-
 body,
 input,
 textarea,
@@ -81,39 +78,45 @@ button,
 }
 
 /* Titles */
-
-h1,.h1{
-	font-size: 2rem;
-	line-height: 1.1;
-}
-
-h2,.h2{
-	font-size: 4.0rem;
-	line-height: 1.2;
-	font-weight: 300;}
-
-h3,.h3{
-	font-size: 3.5rem;
-	line-height: 1.2;}
-
+h1,.h1,
+h2,.h2,
+h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6{
-	line-height: 1.2;
-	font-weight: 400;
+	line-height: 1;
+	font-weight: 700;
+	text-transform: none;
 	color: #33363a;
 }
-
-
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover{
-	color: #666;
+	color: #3fb58b;
 }
-
+h1,.h1{
+	font-size: 2rem;
+	line-height: 1.1;
+}
+h2,.h2{
+	font-size: 3.3rem;
+}
+h3,.h3{
+	font-size: 2.3rem;
+}
+h4,.h4{
+	font-size: 1.8rem;
+}
+h5,.h5{
+	font-size: 1.6rem;
+}
+h6,.h6{
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
 
 /* Widget Titles */
 .footer .widget-title,
@@ -121,6 +124,7 @@ h6 a:hover{
 	font-size: 1.4rem;
 	letter-spacing: 0;
 	font-weight: 700;
+	text-transform: uppercase;
 	color: #fff;
 }
 .footer-light .widget-title,
@@ -151,12 +155,12 @@ a,
 p a,
 .box a:not(.button),
 .shop .breadcrumb a{
-	color: #333;
+	color: #3fb58b;
 }
 .sidebar .widget a,
 .shop .product-summary a,
 .shop .cart-overview a{
-	color: #333;
+	color: #666;
 }
 a:hover,
 p a:hover,
@@ -175,8 +179,7 @@ p a:hover,
 .widget a:not(.button):hover,
 .shop .product-summary a:hover,
 .shop .cart-overview a:hover{
-	color: #333;
-	text-decoration: underline;
+	color: #3fb58b;
 }
 
 /* Footer Specific Link Colors */
@@ -194,10 +197,10 @@ p a:hover,
 .footer-light a:hover + .post-info .post-date,
 .footer-light .navigation a:hover,
 .footer-light .social-list a:hover{
-	color: #2bada4;
+	color: #3fb58b;
 }
 .footer-light .footer-bottom a:hover{
-	color: #2bada4;
+	color: #3fb58b;
 }
 
 /* Special Links */
@@ -211,16 +214,14 @@ a.animated-link{
 /* Lead */
 .lead,
 blockquote{
-	font-size: 2.2rem;
+	font-size: 2rem;
 	font-weight: 600;
-	line-height: 1.3;
 }
 
 /* Title Classes */
 .title-xlarge{
 	font-size: 9.6rem;
 	line-height: 1;
-
 }
 .title-large{
 	font-size: 6.4rem;
@@ -237,25 +238,19 @@ blockquote{
 
 /* Text Classes */
 .text-xlarge{
-	font-size: 6.6rem;
+	font-size: 2.6rem;
+}
+.text-large{
+	font-size: 2rem;
 }
 
-.text-large{
-	font-size: 3.4rem;
-	line-height: 1.2;
-}
 .text-medium{
 	font-size: 3.2rem;
 	line-height: 1.3;
 }
-.text-small{
-	font-size: 2.0rem;
-	line-height: 1.3;
-}
 
-.text-xsmall{
-	font-size: 1.4rem;
-	line-height: 1.2;
+.text-small{
+	font-size: 1.1rem;
 }
 
 /* Special Text Classes */
@@ -264,9 +259,6 @@ blockquote{
 	line-height: 1;
 }
 
-.hidden { font-size: 0; }
-
-
 /* Weight Classes */
 .weight-light{
 	font-weight: 300;
@@ -274,29 +266,17 @@ blockquote{
 .weight-regular{
 	font-weight: 400;
 }
-
-.weight-medium{
-	font-weight: 500;
-}
-
 .weight-semi-bold{
 	font-weight: 600;
 }
-
 .weight-bold{
 	font-weight: 700;
 }
 
-.weight-black{
-	font-weight: 800;
-}
-
 @media only screen and (max-width: 768px){
-
-
 	h1,
 	.title-xlarge{
-		font-size: 1.5rem;
+		font-size: 4rem;
 	}
 	h2,
 	.title-large{
@@ -304,10 +284,10 @@ blockquote{
 	}
 	h3,
 	.title-medium{
-		font-size: 2.8rem;
+		font-size: 1.8rem;
 	}
 	h4{
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 	h5{
 		font-size: 1.3rem;
@@ -322,37 +302,22 @@ blockquote{
 
 	/* Lead */
 	.lead{
-		font-size: 2.2rem;
+		font-size: 1.7rem;
 	}
 
 	/* Text Classes */
 	.text-xlarge{
-		font-size: 4.6rem;
+		font-size: 2rem;
 	}
 	.text-large{
-		font-size: 2.8rem;
-		line-height: 1.2;
+		font-size: 1.7rem;
 	}
 	.text-medium{
-		font-size: 2.6rem;
-		line-height: 1.2;
+		font-size: 1.4rem;
 	}
 	.text-small{
-		font-size: 2.0rem;
-		line-height: 1.1;
+		font-size: 1.1rem;
 	}
-
-	.text-xsmall{
-		font-size: 1.4rem;
-		line-height: 1.2;
-	}
-
-
-	.font-vertical-fix {
-	  position: relative;
-	  bottom: -0.2rem;
-	}
-
 
 	/* Helpers */
 	.fullscreen-section .background-on-mobile{
@@ -367,7 +332,7 @@ blockquote{
 	.fullscreen-section .background-on-mobile h4,
 	.fullscreen-section .background-on-mobile h5,
 	.fullscreen-section .background-on-mobile h6{
-		color: #666 !important;
+		color: #33363a !important;
 	}
 }
 
@@ -487,6 +452,24 @@ body,
 .color-charcoal,
 .color-hover-charcoal:hover{
 	color: #232323;
+}
+
+/* green */
+.bkg-green{
+	background-color: #3fb58b;
+	border-color: #3fb58b;
+}
+.bkg-hover-green:hover{
+	background-color: #3fb58b;
+	border-color: #3fb58b;
+}
+.border-green,
+.border-hover-green:hover{
+	border-color: #3fb58b;
+}
+.color-green,
+.color-hover-green:hover{
+	color: #3fb58b;
 }
 
 /* mint */
@@ -723,8 +706,6 @@ body,
 	color: #33363a;
 }
 
-
-
 /*------------------------------------------------------------------
 [3. Section Padding]
 */
@@ -862,9 +843,9 @@ body,
 
 /* Header Initial Styling */
 .header .header-inner{
-	background-color: #ffffff;
+	background-color: #fff;
 	border-bottom: none;
-	/*border-bottom: 1px solid #eee;*/
+	border-bottom: 1px solid #eee;
 }
 .header.no-border .header-inner{
 	border-bottom: 1px solid transparent;
@@ -891,7 +872,7 @@ body,
 
 /* Background Header - On Scroll! */
 .header-background .header-inner{
-	background-color: #ffffff;
+	background-color: #fff;
 }
 .header-background.with-shadow .header-inner{
 	box-shadow: 0 0 3rem 0 rgba(0,0,0,0.1);
@@ -950,7 +931,7 @@ body,
 
 /* Compacted Header Logo Width */
 .header-compact .logo{
-	width: 24rem;
+	width: 7rem;
 }
 
 /* Initial Logo Styling */
@@ -1051,41 +1032,38 @@ body,
 	margin: 0 1.5rem;
 	padding-left: 0;
 	padding-right: 0;
-	font-size: 1.8rem;
-	text-transform: none;
+	font-size: 1.1rem;
+	text-transform: uppercase;
 	font-weight: 700;
-	letter-spacing: none;
+	letter-spacing: 0.1rem;
 }
 
 /* Header Initial & Active Nav Colors */
 .header .navigation > ul > li > a{
-	color: #33363a;
+	color: #999;
 	opacity: 1;
 }
 .header .navigation > ul > li.current > a,
 .header .navigation > ul > li > a:hover{
 	color: #33363a;
 	opacity: 1;
-	text-decoration: underline;
-	text-underline-offset: 1rem;
 }
-
 .header .navigation > ul > li.current > a:hover{
 	color: #33363a;
 }
 
 /* Transparent Header Initial, Hover & Current Nav Colors */
 .header-transparent .navigation > ul > li > a{
-	color: #444;
-	opacity: 1;
+	color: #fff;
+	opacity: 0.6;
 }
 .header-transparent .navigation > ul > li > a:hover{
-	color: #000;
+	color: #fff;
 	opacity: 1;
 }
 .header-transparent .navigation > ul > li.current > a,
 .header-transparent .navigation > ul > li.current > a:hover{
-	color: #000;
+	color: #fff;
 	opacity: 1;
 }
 
@@ -1102,17 +1080,17 @@ body,
 
 /* Header Background Initial, Hover & Current Nav Colors - On Scroll! */
 .header-background .navigation > ul > li > a{
-	color: #33363a;
+	color: #999;
 }
 .header-background .navigation > ul > li.current > a{
-	color: #000000;
+	color: #33363a;
 	border-bottom: none;
 }
 .header-background .navigation > ul > li.current > a:hover{
 	color: #33363a;
 }
 .header-background .navigation > ul > li > a:hover{
-	color: #000000;
+	color: #33363a;
 	opacity: 1;
 }
 
@@ -1147,7 +1125,7 @@ body,
 .navigation .cart .badge{
 	top: -0.4rem;
 	left: 1.2rem;
-	background-color: #2bada4;
+	background-color: #3fb58b;
 }
 .navigation .cart-overview .product-title{
 	color: #fff;
@@ -1167,7 +1145,7 @@ body,
 	border-color: #444;
 }
 .navigation .cart-overview .checkout.button{
-	background-color: #2bada4;
+	background-color: #3fb58b;
 	border-color: transparent;
 	color: #fff;
 }
@@ -1215,8 +1193,8 @@ body,
 	padding: 0.1rem 0.4rem;
 	font-size: 1rem;
 	text-transform: uppercase;
-	background-color: #2bada4;
-	border-color: #2bada4;
+	background-color: #3fb58b;
+	border-color: #3fb58b;
 	color: #fff;
 }
 
@@ -1261,7 +1239,7 @@ body,
 	opacity: 1;
 }
 .header .cart .badge{
-	background-color: #2bada4;
+	background-color: #3fb58b;
 }
 
 /* Social Icons Initial & Hover Colors  */
@@ -1269,7 +1247,7 @@ body,
 	color: #666;
 }
 .header .social-list li a:hover{
-	color: #2bada4;
+	color: #3fb58b;
 }
 
 /* Button, Dropdown Button Initial, Hover & Active Colors */
@@ -1282,7 +1260,7 @@ body,
 .header .v-align-middle > .button:not(.nav-icon):hover,
 .header .dropdown > .button:not(.nav-icon):hover,
 .header .dropdown > .button.active:not(.nav-icon){
-	background-color: #2bada4;
+	background-color: #3fb58b;
 	border-color: transparent;
 	color: #fff;
 }
@@ -1327,7 +1305,7 @@ body,
 }
 .nav-dark .v-align-middle > .button:not(.nav-icon):hover,
 .nav-dark .dropdown > .button:not(.nav-icon):hover{
-	background-color: #2bada4;
+	background-color: #3fb58b;
 	border-color: transparent;
 	color: #fff;
 }
@@ -1346,12 +1324,12 @@ body,
 	color: #fff;
 }
 .header .v-align-middle.current > .button:not(.nav-icon){
-	background-color: #2bada4;
-	border-color: #2bada4;
+	background-color: #3fb58b;
+	border-color: #3fb58b;
 }
 .header-background .v-align-middle > .button:not(.nav-icon):hover,
 .header-background .dropdown > .button:not(.nav-icon):hover{
-	background-color: #2bada4;
+	background-color: #3fb58b;
 	border-color: transparent;
 	color: #fff;
 }
@@ -1389,7 +1367,7 @@ body,
 }
 .mobile .v-align-middle > .button:not(.nav-icon):hover,
 .mobile .dropdown > .button:not(.nav-icon):hover{
-	background-color: #2bada4;
+	background-color: #3fb58b;
 	border-color: transparent;
 	color: #fff;
 }
@@ -1413,7 +1391,7 @@ body,
 	}
 	.header .v-align-middle > .button:not(.nav-icon):hover,
 	.header .dropdown > .button:not(.nav-icon):hover{
-		background-color: #2bada4;
+		background-color: #3fb58b;
 		border-color: transparent;
 		color: #fff;
 	}
@@ -1492,7 +1470,7 @@ body,
 	width: 12rem;
 }
 .side-navigation-wrapper{
-	background-color: #fff;
+	background-color: #f6f6f6;
 	box-shadow: none !important;
 }
 .side-navigation-wrapper.slide-in-reset{
@@ -1521,43 +1499,33 @@ body,
 }
 
 /* Side Main Nav Initial Colors & Padding */
-
 .side-navigation > ul > li > a{
 	padding: 0 1rem;
 	display: inline;
-	font-size: 2rem;
-	line-height: 2;
+	font-size: 4rem;
+	line-height: 1.2;
 	letter-spacing: 0;
-	text-transform: none;
-	font-weight: 600;
-	color: #626262;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #999;
 	position: relative;
 }
-
-
 .side-navigation ul li.current > a{
-	color: #000000;
+	color: #33363a;
 	font-weight: 700;
-	text-decoration: underline;
-	}
-
-	.side-navigation > ul > li > a:hover{
-		text-decoration: underline;
-		color: #000000;
-		}
-
+}
 .side-navigation-wrapper .navigation-hide{
 	margin-right: 2rem;
 }
 .side-navigation-wrapper .navigation-hide{
-	color: #002d40;
+	color: #666;
 }
 .side-navigation-wrapper .navigation-hide a:hover{
-	color: #000000;
+	color: #33363a;
 }
 .one-page-nav .side-navigation > ul > li > a{
-	padding: 0 3rem 3rem;
-	font-size: 2.6rem;
+	padding: 0 4rem;
+	font-size: 3rem;
 }
 
 /* Side Nav Sub Menu Initial Colors & Padding */
@@ -1566,12 +1534,12 @@ body,
 }
 .side-navigation .sub-menu a{
 	text-transform: none;
-	font-size: 1.8rem;
+	font-size: 1.2rem;
 	font-weight: normal;
-	color: #3e3e3e;
+	color: #999;
 }
 .side-navigation .sub-menu a:hover{
-	color: #3e3e3e;
+	color: #fff;
 }
 .side-navigation .sub-menu li:first-child{
 	padding-top: 1rem;
@@ -1595,7 +1563,7 @@ body,
 
 /* Side Nav Cart Initial Colors */
 .side-navigation .cart .badge{
-	background-color: #2bada4;
+	background-color: #3fb58b;
 }
 .side-navigation .cart-overview .product-title{
 	color: #33363a;
@@ -1616,7 +1584,7 @@ body,
 	border-color: #ddd;
 }
 .side-navigation .cart-overview .checkout.button{
-	background-color: #2bada4;
+	background-color: #3fb58b;
 	border-color: transparent;
 	color: #33363a;
 }
@@ -1629,7 +1597,7 @@ body,
 /* Side Nav Hover Colors */
 .side-navigation ul li a:hover,
 .side-navigation ul li.current a:hover{
-	color: #626262;
+	color: #33363a;
 }
 
 /* Side Nav Widget */
@@ -1732,7 +1700,7 @@ body,
 
 /* Overlay Nav Cart */
 .overlay-navigation .cart .badge{
-	background-color: #2bada4;
+	background-color: #3fb58b;
 }
 .overlay-navigation .cart-overview .product-title{
 	color: #33363a;
@@ -1751,7 +1719,7 @@ body,
 	border-color: #eee;
 }
 .overlay-navigation .cart-overview .checkout.button{
-	background-color: #2bada4;
+	background-color: #3fb58b;
 	border-color: transparent;
 	color: #fff;
 }
@@ -1986,7 +1954,7 @@ body,
 	border-radius: 50%;
 }
 .testimonial-slider-aux-nav a.active .h5{
-	color: #2bada4;
+	color: #3fb58b;
 }
 
 /* Recent Slider */
@@ -2185,7 +2153,7 @@ body,
 }
 .tm-pageloader #tm-pl-bar{
 	width: 0;
-	background-color: #2bada4;
+	background-color: #3fb58b;
 }
 
 /* Plugin Preloader */
@@ -2328,26 +2296,10 @@ body,
 	background-image: url(../images/team/hero-2.jpg);
 }
 
-
-
-.bkg-image-1{
-	background-image:url(../images/homepage/party-wheelchairs.jpg);
-}
-
 /* Hero */
-.hero-01-intro-1{
-	background-image: url(../images/homepage/party-wheelchairs.jpg);
+.hero-2-intro-1{
+	background-image: url(../images/generic/hero-homepage.jpg);
 }
-
-.hero-02-intro-1{
-	background-image: url(../images/homepage/walker-beach.jpg);
-}
-
-.hero-03-intro-1{
-	background-image: url(../images/homepage/senior-coffee.jpg);
-}
-
-
 .hero-2-app-1{
 	background-image: url(../images/generic/hero-app-1.jpg);
 }
@@ -2563,7 +2515,7 @@ body,
 }
 .map-pan-link-container a.button.active{
 	background: none;
-	border-color: #2bada4;
+	border-color: #3fb58b;
 	color: #fff;
 }
 
@@ -2588,8 +2540,7 @@ h3.project-title{
 	text-transform: uppercase;
 }
 .project-description{
-	font-size: 1.4 rem;
-	text-transform: uppercase;
+	font-size: 1.2rem;
 }
 .item-description.with-background{
 	padding: 2rem;
@@ -2721,13 +2672,13 @@ h3.project-title{
 .pagination-3 a:hover{
 	background: transparent;
 	border: none;
-	color: #2bada4;
+	color: #3fb58b;
 }
 .pagination-3 a.current{
 	background: transparent;
-	border: 1px solid #2bada4;
+	border: 1px solid #3fb58b;
 	font-weight: 700;
-	color: #2bada4;
+	color: #3fb58b;
 }
 .pagination-3 a.disabled,
 .pagination-3 a.disabled:hover{
@@ -3088,7 +3039,7 @@ select{
 textarea:focus{
 	background-color: #fff;
 	border-width: 1px;
-	border-color: #2bada4;
+	border-color: #3fb58b;
 	box-shadow: none;
 	color: #33363a;
 }
@@ -3105,7 +3056,7 @@ select.required-field:focus{
 textarea.required-field,
 select.required-field{
 	background-color: #fff;
-	border-color: #2bada4;
+	border-color: #3fb58b;
 	box-shadow: none;
 	color: #33363a;
 	position: relative;
@@ -3149,18 +3100,18 @@ select.required-field{
 }
 .checkbox:checked + .checkbox-label:before {
 	content: '\e63a';
-	background: #2bada4;
-	border-color: #2bada4;
+	background: #3fb58b;
+	border-color: #3fb58b;
 	color: #fff;
 }
 .radio:checked + .radio-label:before {
-	background: #2bada4;
+	background: #3fb58b;
 }
 .checkbox.required-field{
 	position: absolute;
 }
 .checkbox.required-field + .checkbox-label:before{
-	border-color: #2bada4;
+	border-color: #3fb58b;
 }
 
 /* Contact Specific */
@@ -3224,7 +3175,7 @@ select.required-field{
 .signup-1 .form-element:focus{
 	background-color: #fff;
 	border-width: 1px;
-	border-color: #2bada4;
+	border-color: #3fb58b;
 	color: #33363a;
 }
 .signup-1 .form-element.required-field:focus{
@@ -3236,7 +3187,7 @@ select.required-field{
 .signup-1 .form-element.required-field{
 	background-color: #fff;
 	border-width: 1px;
-	border-color: #2bada4;
+	border-color: #3fb58b;
 	color: #33363a;
 	position: relative;
 }
@@ -3406,7 +3357,7 @@ select.required-field{
 .footer .form-element.required-field,
 .footer textarea.required-field{
 	background-color: transparent;
-	border-color: #2bada4;
+	border-color: #3fb58b;
 	color: #fff;
 }
 .footer .form-element.required-field:focus,
@@ -3422,7 +3373,7 @@ select.required-field{
 }
 .footer-light .form-element:focus,
 .footer-light textarea:focus{
-	border-color: #2bada4;
+	border-color: #3fb58b;
 	color: #33363a;
 }
 .footer-light .form-element.required-field,
@@ -3697,11 +3648,6 @@ a.disabled .text-line{
 [26. Media Element Player]
 */
 
-.mobile-video {display: none;}
-@media screen and (max-width: 960px) { .desktop-video { transform: scale(1.8); } }
-@media screen and (max-width: 1068px) { .desktop-video { display: none; } .mobile-video {display: block} }
-
-
 .mejs-container.mejs-audio .mejs-controls{
 	border-radius: 3px;
 }
@@ -3802,7 +3748,7 @@ a.disabled .text-line{
 /* Shop Overlay Tags */
 .shop .products .product .onsale,
 .single-product .product .onsale{
-	background-color: #2bada4;
+	background-color: #3fb58b;
 	border-radius: 0.3rem;
 }
 .shop .products .product .outofstock,
@@ -3865,7 +3811,7 @@ a.disabled .text-line{
 .product-rating .icon-star,
 .product-list .icon-star,
 .review-star-rating .icon-star{
-	color: #2bada4;
+	color: #3fb58b;
 }
 
 /* Single Product Page */
@@ -3939,8 +3885,8 @@ a.disabled .text-line{
 .overlay-info .button:hover,
 .shop .cart-overview .button:hover,
 .shop .product .button:hover{
-	background-color: #2bada4;
-	border-color: #2bada4;
+	background-color: #3fb58b;
+	border-color: #3fb58b;
 	color: #fff;
 }
 
@@ -4034,7 +3980,7 @@ blockquote cite{
 	padding-top: 4rem;
 	padding-bottom: 4rem;
 	background-color: rgba(255,255,255,1);
-	border-color: #2bada4 !important;
+	border-color: #3fb58b !important;
 }
 .hero-3.middle .hero-content{
 	border-radius: 0.3rem;
@@ -4125,7 +4071,6 @@ blockquote cite{
 	border: none;
 }
 .progress-bar .bar{
-	height: 7.8rem;
 	padding: 0 0.5rem;
 	font-weight: 400;
 }
@@ -4134,10 +4079,10 @@ blockquote cite{
 }
 .progress-bar,
 .progress-bar.medium{
-	height: 7.8rem;
+	height: 0.8rem;
 }
 .progress-bar.large{
-	height: 7.8rem;
+	height: 1.3rem;
 	line-height: 1rem;
 	font-size: 1rem;
 }
@@ -4180,7 +4125,7 @@ blockquote cite{
 .accordion.style-1 > ul > li.active > a:hover{
 	background-color: transparent;
 	border-color: #eee;
-	color: #2bada4;
+	color: #3fb58b;
 }
 .accordion.style-1 > ul > li > div{
 	border: none;
@@ -4201,7 +4146,7 @@ blockquote cite{
 .accordion.style-2 > ul > li.active > a:hover{
 	background-color: transparent;
 	border-color: transparent;
-	color: #2bada4;
+	color: #3fb58b;
 }
 .accordion.style-2 .accordion-content{
 	padding: 1rem 0 3rem 0;
@@ -4301,7 +4246,7 @@ blockquote cite{
 .tabs.style-2.vertical.right .tab-nav > li.active a{
 	background-color: transparent;
 	border-width: 0 0 1px 0;
-	border-color: #2bada4;
+	border-color: #3fb58b;
 	color: #33363a;
 }
 /* style 3 */
@@ -4397,12 +4342,12 @@ blockquote cite{
 	.tabs.style-2.vertical .tab-nav > li.active a,
 	.tabs.style-2.vertical .tab-nav > li.active a:hover{
 		border: none;
-		border-right: 1px solid #2bada4;
+		border-right: 1px solid #3fb58b;
 	}
 	.tabs.style-2.vertical.right .tab-nav > li.active a,
 	.tabs.style-2.vertical.right .tab-nav > li.active a:hover{
 		border: none;
-		border-left: 1px solid #2bada4;
+		border-left: 1px solid #3fb58b;
 	}
 }
 
@@ -4442,8 +4387,8 @@ blockquote cite{
 
 /* Timeline */
 .timeline.vertical-indication .timeline-title:after{
-	border: 4px solid #2bada4;
-	background-color: #2bada4;
+	border: 4px solid #3fb58b;
+	background-color: #3fb58b;
 	z-index: 1;
 }
 .timeline.vertical-indication .timeline-description:before{
